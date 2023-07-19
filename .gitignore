@@ -1,0 +1,36 @@
+.DS_Store
+node_modules
+src/build*
+/build*
+/dist*
+/logs
+
+# local package lock
+package-lock.json
+yarn-lock.json
+
+# local env files
+.env.local
+.env.*.local
+.env
+
+# Log files
+*.log
+*.log*
+
+# ssh keys
+#*.pem
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Backup files
+*.bak
+
+# tmp
+**/tmp

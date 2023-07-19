@@ -1,0 +1,19 @@
+{
+  "name": "reputation-checker",
+  "version": "1.0.0",
+  "description": "Uses sanctionscanner to check the 'reputation' of an individual",
+  "main": "index.js",
+  "scripts": {
+    "test": "node sample.js"
+  },
+  "keywords": [
+    "sanctionscanner",
+    "reputation",
+    "checker"
+  ],
+  "author": "Cagan Senturk",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch-commonjs": "^3.3.1"
+  }
+}
