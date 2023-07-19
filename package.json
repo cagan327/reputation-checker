@@ -15,5 +15,14 @@
   "license": "MIT",
   "dependencies": {
     "node-fetch-commonjs": "^3.3.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cagan327/reputation-checker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cagan327/reputation-checker/issues"
+  },
+  "homepage": "https://github.com/cagan327/reputation-checker#readme"
 }
