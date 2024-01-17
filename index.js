@@ -1,8 +1,10 @@
 const fetch = require("node-fetch-commonjs");
-const url =
+const defaultUrl =
   "https://api.sanctionscanner.com/api/Search/SearchByDocumentNumber?documentNumber=";
+
 class Checker {
-  constructor(username, password) {
+  constructor(url, username, password) {
+    this.url = url || defaultUrl;
     this.username = username;
     this.password = password;
     this.auth = Buffer.from(`${this.username}:${this.password}`).toString(
@@ -15,7 +17,7 @@ class Checker {
       throw "Invalid maxAcceptable number";
     }
     try {
-      const response = await fetch(`${url}/${nationalId}`, {
+      const response = await fetch(`${this.url}/${nationalId}`, {
         method: "GET",
         headers: {
           Authorization: "Basic " + this.auth,
